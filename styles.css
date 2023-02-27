@@ -1,0 +1,430 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Parallax Section */
+  #parallax {
+    background: url(images/headers/header-bg.jpg) top/cover;
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1 {
+    display: inline;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 70%;
+    margin-top: 25%;
+    margin-left: calc(30% - 66px);
+    white-space: nowrap;
+  }
+  
+  /* Navbar Section */
+  nav.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.7);
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  nav.navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav.navbar li {
+    margin: 0 25px;
+  }
+  
+  nav.navbar a {
+    font-size: 25px;
+    color: rgba(44, 44, 44, 0.86);
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background-color: rgba(173, 216, 230, 0.895);
+    cursor: pointer;
+  }
+  
+  .navbar-toggle {
+    display: inline-block;
+  }
+  
+  /* Portfolio Section */
+  #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* add this line */
+    padding-top: 10px;
+  }
+  
+  
+  .portfolio-header,
+  .filter-label {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-container,
+  .filter-wrapper {
+    width: calc(33.33% - 50px); /* 33.33% minus left and right margin */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+  
+  
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    flex: 1 0 0; /* added these */
+  }
+  
+  .filter-wrapper,
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    flex: 1 0 0; /* added these */
+  }
+  
+  .filter-wrapper {
+    flex-grow: 2; /* added this to make it wider */
+  }
+  
+  .filter-button {
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background-color: rgba(173, 216, 230, 0.895);
+    margin-bottom: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  
+  .filter-button.active {
+    background-color: white;
+    color: #333;
+  }
+  
+  .portfolio-container, .filter-wrapper {
+    flex: 1;
+    padding: 20px; /* added this */
+  }
+  
+  /* Personal Sections */
+  .personal-writting,
+  .personal-blog,
+  .personal-photos,
+  .resume,
+  .personal-library,
+  .personal-charity-work {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  .map h2
+  {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+  
+  .map h2:hover {
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    transform: scale(1.2);
+    transform-origin: center;
+    left: 10px;
+    display: inline-block;
+    padding-left: 10px;
+  }
+  
+  .filter-wrapper h2,
+  .portfolio-container h2,
+  .personal-writting h2,
+  .personal-blog h2,
+  .personal-photos h2,
+  .resume h2,
+  .personal-library h2,
+  .personal-charity-work h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  .personal-blog h2:hover,
+  .resume h2:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+  
+  .personal-blog ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap:nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+  }
+  
+  
+  .personal-writting-container ul,
+  .personal-photos-container ul,
+  .personal-library-container ul,
+  .personal-charity-work-container ul {
+  display: block;
+  margin-bottom: 10px;
+  }
+  
+  .personal-blog li {
+  text-align: center;
+  }
+  
+  .personal-blog li h3 {
+  background-color: rgba(173, 216, 230, 0.895);
+  padding: 10px 10px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.2;
+  }
+  
+  .personal-photos img {
+  flex: 0 1 calc(33.33% - 20px);
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  }
+  
+  .download-resume,
+  .resume-thumbnail{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .personal-blog a,
+  .personal-writting a,
+  .personal-photos a,
+  .personal-library a,
+  .personal-charity-work a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 10px;
+    color: #000000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .personal-writting a:hover,
+  .personal-blog a:hover,
+  .personal-photos a:hover,
+  .resume a:hover,
+  .personal-library a:hover,
+  .personal-charity-work a:hover {
+  color: #000000;
+  background-color: rgba(173, 216, 230, 0.895);
+  }
+  
+  /* Resume Section */
+  
+  .resume .resume-header,
+  .personal-blog .personal-blog-header,
+  .personal-photos .personal-photos-header,
+  .personal-library .personal-library-header,
+  .personal-charity-work .personal-charity-work-header,
+  .personal-writting .personal-writting-header,
+  .map .map-header {
+  cursor: pointer;
+  }
+  
+  .resume,
+  .portfolio,
+  .personal-blog {
+  padding-top: 50px;
+  margin-bottom: 16.66vh;
+  margin-top: auto;
+  }
+  
+  
+  
+  .resume .resume-thumbnail img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 10px;
+  }
+  
+  .resume .resume-thumbnail-container,
+  .personal-blog .personal-blog-container,
+  .personal-photos .personal-photos-container,
+  .personal-library .personal-library-container,
+  .personal-charity-work .personal-charity-work-container,
+  .personal-writting .personal-writting-container,
+  .map .map-container {
+  display: none;
+  }
+  
+  .personal-blog .view-all-posts,
+  .resume .view-all-resume,
+  .personal-photos .view-all-photos,
+  .personal-library .view-all-books,
+  .personal-charity-work .learn-more,
+  .personal-writting .view-all-writting {
+    display: block;
+    background-color: rgba(173, 216, 230, 0.895);
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  /* Contact Section */
+  
+  
+  #contact {
+  background-color: rgb(128, 135, 156);
+  padding-bottom: 5px;
+  }
+  
+  .contacth2 {
+  padding: 10px;
+  color: #ffffff;
+  }
+  
+  #contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(43, 76, 58);
+  padding: 30px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  }
+  
+  #contact form input[type="submit"] {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  }
+  
+  /* Map Section */
+  .map {
+  background-color: rgb(128, 135, 156);
+  }
+  
+  .map-container {
+  width: 100%;
+  height: 300px;
+  margin: 0px 0;
+  padding: 10px, 10px, 5px, 25px;
+  }
+  
+  /* Footer Section */
+  footer {
+  background-color: rgb(13, 0, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  }
+  
+  
+  footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  }
+  
+  footer li {
+  margin: 0 20px;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    width: 30px; /* set a fixed width for the logos */
+    height: 30px; /* set a fixed height for the logos */
+    margin-right: 10px; /* add some margin between the logos */
+  }
+  .social-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* scale the logos while maintaining aspect ratio */
+  }
+  
+  
+  footer a {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }
+  
+  footer p {
+  color: rgb(128, 135, 156);
+  margin: 20px 5px;
+  width: 100%;
+  text-align: center;
+  }
+  
+  
+  
