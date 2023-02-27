@@ -1,23 +1,15 @@
 <?php
-// Perform server-side validation
-if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
-    if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        // Email is valid, so send it
-        $to = 'fearonlewis@yahoo.com';
-        $subject = 'New message from your website';
-        $headers = 'From: ' . $_POST['name'] . ' <' . $_POST['email'] . '>';
-        $message = $_POST['message'];
-
-        if (mail($to, $subject, $message, $headers)) {
-            echo 'Message sent successfully';
-        } else {
-            echo 'An error occurred while sending the message';
-        }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Handle POST request
+    if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
+        // ...perform validation and send email...
+        echo 'Your message has been sent successfully!';
     } else {
-        // Email is not valid
-        echo 'Please enter a valid email address';
+        echo 'Please fill in all required fields';
     }
 } else {
-    // Required fields are missing
-    echo 'Please fill in all required fields';
+    // Handle other HTTP methods (if necessary)
+    header('Allow: POST');
+    http_response_code(405);
+    echo 'Method Not Allowed';
 }

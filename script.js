@@ -126,25 +126,7 @@ window.addEventListener("scroll", function() {
     });
   });
   
-  
-  // Personal Photos Lightbox
-  const photos = Array.from(document.querySelectorAll('.personal-photos img'));
-  photos.forEach(function(photo) {
-    photo.addEventListener('click', function() {
-      const lightbox = document.createElement('div');
-      lightbox.classList.add('lightbox');
-      lightbox.innerHTML = `
-        <img src="${this.src}" alt="${this.alt}">
-        <p>${this.alt}</p>
-      `;
-      document.body.appendChild(lightbox);
-  
-      lightbox.addEventListener('click', function() {
-        lightbox.remove();
-      });
-    });
-  });
-  
+
   // Dropdown from click on headers
   function toggleContainer(header, container) {
     header.addEventListener('click', function() {
