@@ -11,7 +11,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 400vh;
+  height: 300vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@
   
   header h1 {
     display: inline;
-    font-size: 40px;
+    font-size: 46px;
     color: white;
     margin-bottom: 70%;
     margin-top: 25%;
@@ -37,42 +37,93 @@
   }
   
   /* Navbar Section */
-  nav.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(44, 44, 44, 0.7);
-    position: fixed;
-    top: 5px;
-    left: 0;
-    right: 0;
-    z-index: 1;
+nav.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(44, 44, 44, 0.7);
+  position: fixed;
+  top: 1%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav.navbar li {
+  margin: 0 2%;
+}
+
+nav.navbar a {
+  font-size: 1rem;
+  color: rgba(44, 44, 44, 0.86);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: rgba(173, 216, 230, 0.895);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+@media (max-width: 890px) {
+  #parallax {
+    height: 200vh;
   }
-  
-  nav.navbar ul {
-    list-style: none;
-    display: flex;
+  nav.navbar-toggle {
+    display: block;
   }
-  
   nav.navbar li {
-    margin: 0 25px;
+    margin: 0 1%;
   }
-  
   nav.navbar a {
-    font-size: 1.5em;
-    color: rgba(44, 44, 44, 0.86);
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 1.5em;
-    background-color: rgba(173, 216, 230, 0.895);
-    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
   }
-  
-  .navbar-toggle {
-    display: inline-block;
+  #portfolio .portfolio-header,
+  #portfolio .filter-label {
+    display: contents;
+    font-size: 1.5rem;
   }
-  
+  #portfolio .portfolio-item img {
+    height: 10vw;
+    width: 10vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #parallax {
+    height: 125vh;
+  }
+  nav.navbar-toggle {
+    display: block;
+  }
+  nav.navbar li {
+    margin: 0 1%;
+  }
+  nav.navbar a {
+    font-size: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+  }
+  #portfolio .portfolio-container,
+  #portfolio .filter-wrapper {
+    display: none;
+  }
+  #portfolio .portfolio-header,
+  #portfolio .filter-label {
+    display: contents;
+    font-size: 1.5rem;
+  }
+}
+
   /* Portfolio Section */
   #portfolio {
     display: flex;
@@ -105,16 +156,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    flex-grow: 1;
-  }
-  
-  
-  .portfolio-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
     flex: 1 0 0; /* added these */
+  }
+
+  .portfolio-item img {
+    height: 25vh;
+    width: 25vh;
   }
   
   .filter-wrapper,
@@ -148,6 +195,16 @@
   .portfolio-container, .filter-wrapper {
     flex: 1;
     padding: 20px; /* added this */
+  }
+
+  .portfolio-item {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
   
   /* Personal Sections */
@@ -231,7 +288,7 @@
   padding: 10px 10px;
   border-radius: 25px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.2;
   }
   
@@ -294,8 +351,8 @@
   .resume,
   .portfolio,
   .personal-blog {
-  padding-top: 50px;
-  margin-bottom: 16.66vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
   margin-top: auto;
   }
   
@@ -369,6 +426,7 @@
   cursor: pointer;
   }
   
+  
   /* Map Section */
   .map {
   background-color: rgb(128, 135, 156);
@@ -383,32 +441,31 @@
   
   /* Footer Section */
   footer {
-  background-color: rgb(13, 0, 32);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  flex-wrap: wrap;
+    background-color: rgb(13, 0, 32);
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-media-container {
+    align-items: right;
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
   }
   
-  
-  footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  .social-media {
+    align-items: center;
   }
-  
-  footer li {
-  margin: 0 20px;
-  }
-  
+
   .social-media li {
     display: inline-block;
     width: 30px; /* set a fixed width for the logos */
     height: 30px; /* set a fixed height for the logos */
-    margin-right: 10px; /* add some margin between the logos */
+    margin-left: 15px; /* add some margin between the logos */
   }
   .social-media img {
     display: block;
@@ -416,19 +473,28 @@
     height: 100%;
     object-fit: contain; /* scale the logos while maintaining aspect ratio */
   }
-  
-  
+
+  .social-media img:hover{
+    transform: scale(1.5);
+  }
+
+
   footer a {
   font-size: 28px;
   color: rgb(255, 255, 255);
   text-decoration: none;
   }
-  
-  footer p {
-  color: rgb(128, 135, 156);
-  margin: 20px 5px;
-  width: 100%;
-  text-align: center;
+
+  .page-rights {
+      align-items: left;
+      text-align: left;
+      width: 23%;
+  }
+
+  .page-rights p {
+    color: rgb(128, 135, 156);
+    display: inline-block;
+		padding: 10px;
   }
   
   
