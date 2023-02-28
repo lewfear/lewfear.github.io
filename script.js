@@ -1,6 +1,6 @@
 // Parallax scrolling effect
 window.addEventListener("scroll", function() {
-    let header = document.querySelector("section#parallax");
+    let header = document.querySelector("#parallax");
     header.style.backgroundPositionY = -window.pageYOffset + "px";
   });
   
@@ -43,16 +43,19 @@ window.addEventListener("scroll", function() {
       return;
     }
   
-    xhr.open('POST', 'https://yourdomain.com/email.php', true);
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'email.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          alert(xhr.responseText);
+          alert('Your message has been sent successfully!');
           // Form submit animation
-          let submitButton = document.querySelector("input[type='submit']");
-          submitButton.style.backgroundColor = "green";
-          submitButton.value = "Sent";
+          document.querySelector("form").addEventListener("submit", function() {
+            let submitButton = document.querySelector("input[type='submit']");
+            submitButton.style.backgroundColor = "green";
+            submitButton.value = "Sent";
+          });
           contactForm.reset();
         } else {
           alert('There was an error sending your message');
