@@ -139,7 +139,7 @@ window.addEventListener("scroll", function() {
   }
   
   toggleContainer(document.querySelector('.map-header'), document.querySelector('.map-container'));
-  toggleContainer(document.querySelector('.personal-writting-header'), document.querySelector('.personal-writting-container'));
+  toggleContainer(document.querySelector('.personal-writing-header'), document.querySelector('.personal-writing-container'));
   toggleContainer(document.querySelector('.resume-header'), document.querySelector('.resume-thumbnail-container'));
   toggleContainer(document.querySelector('.personal-blog-header'), document.querySelector('.personal-blog-container'));
   toggleContainer(document.querySelector('.personal-photos-header'), document.querySelector('.personal-photos-container'));

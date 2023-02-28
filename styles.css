@@ -146,7 +146,7 @@
   }
   
   /* Personal Sections */
-  .personal-writting,
+  .personal-writing,
   .personal-blog,
   .personal-photos,
   .resume,
@@ -179,7 +179,7 @@
   
   .filter-wrapper h2,
   .portfolio-container h2,
-  .personal-writting h2,
+  .personal-writing h2,
   .personal-blog h2,
   .personal-photos h2,
   .resume h2,
@@ -209,7 +209,7 @@
   }
   
   
-  .personal-writting-container ul,
+  .personal-writing-container ul,
   .personal-photos-container ul,
   .personal-library-container ul,
   .personal-charity-work-container ul {
@@ -251,7 +251,7 @@
   }
   
   .personal-blog a,
-  .personal-writting a,
+  .personal-writing a,
   .personal-photos a,
   .personal-library a,
   .personal-charity-work a {
@@ -264,7 +264,7 @@
     font-size: 18px;
   }
   
-  .personal-writting a:hover,
+  .personal-writing a:hover,
   .personal-blog a:hover,
   .personal-photos a:hover,
   .resume a:hover,
@@ -281,7 +281,7 @@
   .personal-photos .personal-photos-header,
   .personal-library .personal-library-header,
   .personal-charity-work .personal-charity-work-header,
-  .personal-writting .personal-writting-header,
+  .personal-writing .personal-writing-header,
   .map .map-header {
   cursor: pointer;
   }
@@ -307,7 +307,7 @@
   .personal-photos .personal-photos-container,
   .personal-library .personal-library-container,
   .personal-charity-work .personal-charity-work-container,
-  .personal-writting .personal-writting-container,
+  .personal-writing .personal-writing-container,
   .map .map-container {
   display: none;
   }
@@ -317,7 +317,7 @@
   .personal-photos .view-all-photos,
   .personal-library .view-all-books,
   .personal-charity-work .learn-more,
-  .personal-writting .view-all-writting {
+  .personal-writing .view-all-writing {
     display: block;
     background-color: rgba(173, 216, 230, 0.895);
     margin-bottom: 10px;
