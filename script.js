@@ -44,7 +44,7 @@ window.addEventListener("scroll", function() {
     }
   
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'email.php', true);
+    xhr.open('POST', 'https://formsubmit.co/lewisefearon@gmail.com', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
