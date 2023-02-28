@@ -6,12 +6,17 @@
   
   /* Parallax Section */
   #parallax {
-    background: url(images/headers/header-bg.jpg) top/cover;
-    height: 400vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: url(images/headers/header-bg.jpg) top/cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
+
   
   header {
     height: 100vh;
@@ -55,11 +60,11 @@
   }
   
   nav.navbar a {
-    font-size: 25px;
+    font-size: 1.5em;
     color: rgba(44, 44, 44, 0.86);
     text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 30px;
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
     background-color: rgba(173, 216, 230, 0.895);
     cursor: pointer;
   }
