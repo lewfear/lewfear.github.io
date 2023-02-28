@@ -137,12 +137,16 @@
     <section id="contact">
       <h2 class="contacth2">Contact me</h2>
       <form action="email.php" method="post">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+">
-        <textarea name="message" placeholder="Message" required></textarea>
-        <input type="submit" value="Submit">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
       </form>
     </section>
+    
     
     <!-- Map of SJ -->
     <section class="map">
