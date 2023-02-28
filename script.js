@@ -49,11 +49,13 @@ window.addEventListener("scroll", function() {
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          alert(xhr.responseText);
+          alert('Your message has been sent successfully!');
           // Form submit animation
-          let submitButton = document.querySelector("input[type='submit']");
-          submitButton.style.backgroundColor = "green";
-          submitButton.value = "Sent";
+          document.querySelector("form").addEventListener("submit", function() {
+            let submitButton = document.querySelector("input[type='submit']");
+            submitButton.style.backgroundColor = "green";
+            submitButton.value = "Sent";
+          });
           contactForm.reset();
         } else {
           alert('There was an error sending your message');
@@ -61,7 +63,7 @@ window.addEventListener("scroll", function() {
       }
     };
     xhr.send(`name=${nameInput.value}&email=${emailInput.value}&message=${messageInput.value}`);
-
+  });
   
   function validateName(name) {
     return name.trim().length > 0;
