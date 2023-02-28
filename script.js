@@ -43,19 +43,16 @@ window.addEventListener("scroll", function() {
       return;
     }
   
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'email.php', true);
+    xhr.open('POST', 'https://yourdomain.com/email.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          alert('Your message has been sent successfully!');
+          alert(xhr.responseText);
           // Form submit animation
-          document.querySelector("form").addEventListener("submit", function() {
-            let submitButton = document.querySelector("input[type='submit']");
-            submitButton.style.backgroundColor = "green";
-            submitButton.value = "Sent";
-          });
+          let submitButton = document.querySelector("input[type='submit']");
+          submitButton.style.backgroundColor = "green";
+          submitButton.value = "Sent";
           contactForm.reset();
         } else {
           alert('There was an error sending your message');
