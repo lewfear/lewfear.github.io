@@ -1,132 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
-    <title>My Personal Website</title>
+    <title>Lewis Fearon Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
   </head>
+
+
   <body>
     <section id="parallax">
-    <header>
-      <h1>Lewis Fearon</h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#parallax">Top of Page</a></li>
-          <li><a href="#portfolio">Past Work</a></li>
-          <li><a href="#resume">My Resume</a></li>
-          <li><a href="#personal-blog">My Blog</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-        <div class="navbar-toggle">
-          <i class="fa fa-bars"></i>
+      <header>
+        <h1>Lewis Fearon</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#parallax">Top of Page</a></li>
+            <li><a href="#portfolio">Past Work</a></li>
+            <li><a href="#resume">My Resume</a></li>
+            <li><a href="#personal-blog">My Blog</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <div class="navbar-toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+        </nav>
+      </header>
+
+      <section id="portfolio">
+        <div class="portfolio-container">
+          <h2 class="portfolio-header">Past Work</h2>
+          <div class="portfolio-item mobile">
+            <img src="images/projects/project1.jpg" alt="Portfolio Item 1">
+            <p>Project 1</p>
+          </div>
+          <div class="portfolio-item mobile">
+            <img src="images/projects/project2.jpg" alt="Portfolio Item 2">
+            <p>Project 2</p>
+          </div>
+          <div class="portfolio-item web">
+            <img src="images/projects/project3.jpg" alt="Portfolio Item 3">
+            <p>Project 3</p>
         </div>
-      </nav>
-    </header>
-
-<section id="portfolio">
-  <div class="portfolio-container">
-    <h2 class="portfolio-header">Past Work</h2>
-    <div class="portfolio-item mobile">
-      <img src="images/projects/project1.jpg" alt="Portfolio Item 1">
-      <p>Project 1</p>
-    </div>
-    <div class="portfolio-item mobile">
-      <img src="images/projects/project2.jpg" alt="Portfolio Item 2">
-      <p>Project 2</p>
-    </div>
-    <div class="portfolio-item web">
-      <img src="images/projects/project3.jpg" alt="Portfolio Item 3">
-      <p>Project 3</p>
-   </div>
-  </div>
-  <div class="filter-wrapper">
-    <h2 class="filter-label">Filter by</h2>
-    <div class="filter-container">
-      <button class="filter-button active" data-filter="all">All</button>
-      <button class="filter-button" data-filter="web">Web</button>
-      <button class="filter-button" data-filter="mobile">Mobile</button>
-    </div>
-  </div>
-</section>
+        </div>
+        <div class="filter-wrapper">
+          <h2 class="filter-label">Filter by</h2>
+          <div class="filter-container">
+            <button class="filter-button active" data-filter="all">All</button>
+            <button class="filter-button" data-filter="web">Web</button>
+            <button class="filter-button" data-filter="mobile">Mobile</button>
+          </div>
+        </div>
+      </section>
 
 
-    <!-- Resume -->
-    <section id="resume" class="resume">
-      <h2 class="resume-header">My Resume</h2>
-      <div class="resume-thumbnail-container">
-        <a href="resume/Lewis Fearon Resume 2023.pdf" target="_blank" class="download-resume">Download as a PDF</a>
-        <a href="resume/Lewis Fearon Resume 2023.pdf" target="_blank" class="resume-thumbnail">
-          <img src="resume/Lewis Fearon Resume 2023 one-page.png" alt="Resume Thumbnail">
-        </a>
-      </div>
+      <!-- Resume -->
+      <section id="resume" class="resume">
+        <h2 class="resume-header">My Resume</h2>
+        <div class="resume-thumbnail-container">
+          <a href="resume/Lewis Fearon Resume 2023.pdf" target="_blank" class="download-resume">Download as a PDF</a>
+          <a href="resume/Lewis Fearon Resume 2023.pdf" target="_blank" class="resume-thumbnail">
+            <img src="resume/Lewis Fearon Resume 2023 one-page.png" alt="Resume Thumbnail">
+          </a>
+        </div>
+      </section>
+
+      <!-- Personal Blog -->
+      <section id="personal-blog" class="personal-blog">
+        <h2 class="personal-blog-header">My Blog Preview</h2>
+        <div class="personal-blog-container">
+          <ul>
+            <li>
+              <!-- Personal Photos -->
+              <section class="personal-photos">
+                <h3 class="personal-photos-header">Photos Of Me</h3>
+                <div class="personal-photos-container">
+                  <ul class="photos">
+                    <li><img src="images/blog/photo1.jpg" alt="Photo 1"></li>
+                    <li><img src="images/blog/photo2.jpg" alt="Photo 2"></li>
+                    <li><img src="images/blog/photo3.jpg" alt="Photo 3"></li>
+                  </ul>
+                  <a href="#" class="view-all-photos">View all my photos</a>
+                </div>
+              </section>
+            </li>
+            <li>
+              <!-- Personal Writting -->
+              <section class="personal-writting">
+                <h3 class="personal-writting-header">My Writting</h3>
+                <div class="personal-writting-container">
+                  <ul>
+                    <li><a href="blog/blog.html">Writting 1</a></li>
+                    <li><a href="blog/blog.html">Writting 2</a></li>
+                    <li><a href="blog/blog.html">Writting 3</a></li>
+                  </ul>
+                  <a href="blog/blog.html" class="view-all-writting">View All My Written Work</a>
+                </div>
+              </section>
+            </li>
+            <li>
+              <!-- Personal Library -->
+              <section class="personal-library">
+                <h3 class="personal-library-header">My Reading List</h3>
+                <div class="personal-library-container">
+                  <ul>
+                    <li>Book 1</li>
+                    <li>Book 2</li>
+                    <li>Book 3</li>
+                  </ul>
+                  <a href="blog/blog.html" class="view-all-books">View my full reading list</a>
+                </div>
+              </section>
+            </li>
+            <li>
+              <!-- Personal Charity Work -->
+              <section class="personal-charity-work">
+                <h3 class="personal-charity-work-header">A Few Of My Favorite Charities</h3>
+                <div class="personal-charity-work-container">
+                  <ul>
+                    <li>Cause 1</li>
+                    <li>Cause 2</li>
+                    <li>Cause 3</li>
+                  </ul>
+                  <a href="blog/blog.html" class="learn-more">Learn more</a>
+                </div>
+              </section>
+            </li>
+          </ul>
+          <a href="blog/blog.html" class="view-all-posts">View the whole blog</a>
+        </div>
+      </section>
     </section>
-
-    <!-- Personal Blog -->
-    <section id="personal-blog" class="personal-blog">
-      <h2 class="personal-blog-header">My Blog Preview</h2>
-      <div class="personal-blog-container">
-        <ul>
-          <li>
-            <!-- Personal Photos -->
-            <section class="personal-photos">
-              <h3 class="personal-photos-header">Photos Of Me</h3>
-              <div class="personal-photos-container">
-                <ul class="photos">
-                  <li><img src="images/blog/photo1.jpg" alt="Photo 1"></li>
-                  <li><img src="images/blog/photo2.jpg" alt="Photo 2"></li>
-                  <li><img src="images/blog/photo3.jpg" alt="Photo 3"></li>
-                </ul>
-                <a href="#" class="view-all-photos">View all my photos</a>
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Personal Writting -->
-            <section class="personal-writting">
-              <h3 class="personal-writting-header">My Writting</h3>
-              <div class="personal-writting-container">
-                <ul>
-                  <li><a href="blog/blog.html">Writting 1</a></li>
-                  <li><a href="blog/blog.html">Writting 2</a></li>
-                  <li><a href="blog/blog.html">Writting 3</a></li>
-                </ul>
-                <a href="blog/blog.html" class="view-all-writting">View All My Written Work</a>
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Personal Library -->
-            <section class="personal-library">
-              <h3 class="personal-library-header">My Reading List</h3>
-              <div class="personal-library-container">
-                <ul>
-                  <li>Book 1</li>
-                  <li>Book 2</li>
-                  <li>Book 3</li>
-                </ul>
-                <a href="blog/blog.html" class="view-all-books">View my full reading list</a>
-              </div>
-            </section>
-          </li>
-          <li>
-            <!-- Personal Charity Work -->
-            <section class="personal-charity-work">
-              <h3 class="personal-charity-work-header">A Few Of My Favorite Charities</h3>
-              <div class="personal-charity-work-container">
-                <ul>
-                  <li>Cause 1</li>
-                  <li>Cause 2</li>
-                  <li>Cause 3</li>
-                </ul>
-                <a href="blog/blog.html" class="learn-more">Learn more</a>
-              </div>
-            </section>
-          </li>
-        </ul>
-        <a href="blog/blog.html" class="view-all-posts">View the whole blog</a>
-      </div>
-    </section>
-  </section>
 
     <!-- Contact Form -->
     <section id="contact">
@@ -139,6 +144,7 @@
       </form>
     </section>
     
+    <!-- Map of SJ -->
     <section class="map">
       <h2 class="map-header">Where I'm living</h2>
       <div class="map-container">
@@ -146,17 +152,18 @@
       </div>
     </section>
 
+    <!-- Footer w/ socials -->
     <footer>
       <nav>
-        <nav>
-          <ul class="social-media">
-            <li><a id="facebook-link" href="https://www.facebook.com/example" onclick="window.open(this.href,'_blank'); return false;" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only"><img src="images/social_thumbnail/facebook.png" alt=""></span></a></li>
-            <li><a id="instagram-link" href="https://www.instagram.com/example" onclick="window.open(this.href,'_blank'); return false;" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only"><img src="images/social_thumbnail/instagram.png" alt=""></span></a></li>
-            <li><a id="linkedin-link" href="https://www.linkedin.com/example" onclick="window.open(this.href,'_blank'); return false;" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only"><img src="images/social_thumbnail/linkedin.png" alt=""></span></a></li>
-          </ul>
-        </nav> 
+        <ul class="social-media">
+          <li><a id="facebook-link" href="https://www.facebook.com/example" onclick="window.open(this.href,'_blank'); return false;" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only"><img src="images/social_thumbnail/facebook.png" alt=""></span></a></li>
+          <li><a id="instagram-link" href="https://www.instagram.com/example" onclick="window.open(this.href,'_blank'); return false;" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only"><img src="images/social_thumbnail/instagram.png" alt=""></span></a></li>
+          <li><a id="linkedin-link" href="https://www.linkedin.com/example" onclick="window.open(this.href,'_blank'); return false;" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only"><img src="images/social_thumbnail/linkedin.png" alt=""></span></a></li>
+        </ul>
+      </nav> 
       <p>&copy; LewisFearon 2023.
-        <br>All rights reserved.</p>
+        <br>All rights reserved.
+      </p>
     </footer>
     
 
